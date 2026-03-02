@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "content-modeling-best-practices": {
+      "source": "sanity-io/agent-toolkit",
+      "sourceType": "github",
+      "computedHash": "7ea7cf957ccedb956a0a2e18fa68a487a40c5b4a84caa5a58305a4113f449731"
+    },
+    "sanity-best-practices": {
+      "source": "sanity-io/agent-toolkit",
+      "sourceType": "github",
+      "computedHash": "787f0c57fd310b50210c51ee19f13c21c117e3bf9522a1ba2bf460af0e2de24f"
+    },
+    "seo-aeo-best-practices": {
+      "source": "sanity-io/agent-toolkit",
+      "sourceType": "github",
+      "computedHash": "a2122ad11c627122fafbabf7826ea8d832bd3f4ab57ed12b5c06f49caba3301a"
+    },
+    "turborepo": {
+      "source": "vercel/turborepo",
+      "sourceType": "github",
+      "computedHash": "ac4c9e481f94ab7d0c337513c8f20328ce1207a3d61d4257df70d0c1e03c0f17"
+    }
+  }
+}
