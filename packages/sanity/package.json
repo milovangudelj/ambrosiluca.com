@@ -1,0 +1,43 @@
+{
+  "name": "@repo/sanity",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "schema:extract": "sanity schema extract --path=./schema.json",
+    "typegen": "sanity typegen generate",
+    "update-types": "bun run schema:extract && bun run typegen"
+  },
+  "exports": {
+    "./config": "./src/config.ts",
+    "./cli": "./src/cli.ts",
+    "./schema": "./src/schema/index.ts",
+    "./env": "./src/env.ts",
+    "./token": "./src/token.ts",
+    "./client": "./src/lib/client.ts",
+    "./image": "./src/lib/image.ts",
+    "./live": "./src/lib/live.ts",
+    "./queries": "./src/lib/queries.ts",
+    "./types": "./src/types.ts",
+    "./structure": "./src/structure/index.ts",
+    "./presentation": "./src/presentation/resolve.ts"
+  },
+  "dependencies": {
+    "@sanity/client": "^7",
+    "@sanity/icons": "^3",
+    "@sanity/image-url": "^1",
+    "@sanity/vision": "^3",
+    "next-sanity": "^12",
+    "sanity": "^5"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

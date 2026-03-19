@@ -3,22 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "sanity dev",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "schema:deploy": "sanity schema deploy",
+    "dev": "next dev --port 3333",
+    "build": "next build",
+    "start": "next start --port 3333",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@sanity/icons": "^3",
-    "@sanity/vision": "^3",
+    "@repo/sanity": "workspace:*",
+    "next": "16.1.6",
+    "next-sanity": "^12",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "sanity": "^3",
-    "styled-components": "^6.1.15"
+    "sanity": "^5",
+    "styled-components": "^6.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "typescript": "^5"

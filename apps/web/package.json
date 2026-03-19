@@ -10,9 +10,15 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@repo/sanity": "workspace:*",
+    "@sanity/client": "^7",
+    "@sanity/vision": "^3",
     "next": "16.1.6",
+    "next-sanity": "^12",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "sanity": "^5",
+    "styled-components": "^6.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
