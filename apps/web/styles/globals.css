@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+@theme {
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 290;
+  --font-weight-normal: 370;
+  --font-weight-medium: 470;
+  --font-weight-semibold: 580;
+  --font-weight-bold: 690;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+
 @theme inline {
+  --font-sans: var(--font-frama-text);
   --font-display: var(--font-frama);
+  --font-display--font-variation-settings: "slnt" 0;
+}
+
+@layer base {
+  * {
+    font-synthesis: none;
+  }
+}
+
+@utility italic {
+  font-variation-settings: "slnt" 120;
+}
+
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

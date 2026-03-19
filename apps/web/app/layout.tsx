@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { frama } from '~/styles/fonts'
+import { frama, framaText } from "~/styles/fonts";
 
 import "~/styles/globals.css";
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${frama.variable}`}>
+    <html lang="en" className={`${frama.variable} ${framaText.variable}`}>
       <body>{children}</body>
     </html>
   );

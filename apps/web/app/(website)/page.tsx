@@ -8,7 +8,22 @@ export default async function Home() {
     <main className="flex min-h-screen items-center justify-center p-8">
       <div className="max-w-xl text-center">
         {data?.text ? (
-          <p className="text-6xl font-display">{data.text}</p>
+          <div>
+            <p className="text-6xl font-display">
+              {"AaBbCc"}
+              <br />
+              {"01234567"}
+              <br />
+              {"{(!@#$?&)}"}
+            </p>
+            <p className="text-6xl font-sans italic">
+              {"AaBbCc"}
+              <br />
+              {"01234567"}
+              <br />
+              {"{(!@#$?&)}"}
+            </p>
+          </div>
         ) : (
           <p className="text-gray-400">
             No info yet. Open the Studio and add some text.

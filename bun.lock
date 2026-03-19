@@ -5,6 +5,7 @@
     "": {
       "name": "ambrosiluca.com",
       "devDependencies": {
+        "prettier": "^3.8.1",
         "turbo": "^2",
       },
     },
